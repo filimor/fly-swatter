@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Jogo Mata Mosquito</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script>
+			function startGame(){
+				var level = document.getElementById('level').value;
+				if(level === ''){
+					alert('Selecione um nível para iniciar o jogo');
+					return false;
+				}
+
+				window.location.href='app.html?level' + level;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img src="images/game.png" />
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<select class="form-control" id="level">
+								<option value="">-- Selecione o nível --</option>
+								<option value="normal">Normal</option>
+								<option value="hard">Difícil</option>
+								<option value="veryhard">Muito difícil</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-danger btn-lg" onclick="startGame()">Iniciar jogo</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
