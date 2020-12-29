@@ -1,7 +1,7 @@
 var height = 0;
 var width = 0;
 var lives = 1;
-var remainTime = 15;
+var remainingTime = 15;
 var spawnInterval = 1500;
 
 var level = window.location.search;
@@ -25,12 +25,12 @@ function fixStageSize() {
 }
 
 var timer = setInterval(function() {
-	if (--remainTime < 0){
+	if (--remainingTime < 0){
 		clearInterval(timer);
 		clearInterval(spawnFly);
 		window.location.href = 'victory.html';
 	} else {
-		document.getElementById('timer').innerHTML = remainTime;
+		document.getElementById('timer').innerHTML = remainingTime;
 	}
 }, 1000);
 
