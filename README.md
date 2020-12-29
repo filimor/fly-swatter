@@ -1,6 +1,6 @@
 # FLy Swatter
 
-> A simple flw swatter browser game using Javascript.
+> A simple fly swatter browser game using Javascript.
 
 ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/filimor/fly-swatter)
 ![GitHub repo size](https://img.shields.io/github/repo-size/filimor/fly-swatter)
